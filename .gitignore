@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+
+# Log files (if you don't want to include logs in your repository)
+logs/
+
+# Other user-specific or sensitive files
+.env
+.flaskenv
+.env.*
+.envrc
+*.pyc
+*.pyo
+*.env
+
+# Database file (if you don't want to include it in the repository)
+app.db
+
+# Ignore migration files if using a database migration tool
+/migrations/
