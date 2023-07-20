@@ -10,6 +10,7 @@ import os
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel
+from flask import request
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -48,5 +49,9 @@ if not app.debug:
 
     app.logger.setLevel(logging.INFO)
     app.logger.info('Microblog startup')
+
+    @babel.localeselector
+    def get_locale():
+        return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 from app import routes, models, errors
