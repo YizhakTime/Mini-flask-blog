@@ -15,6 +15,7 @@ logs/
 *.pyc
 *.pyo
 *.env
+config.py
 
 # Database file
 app.db
