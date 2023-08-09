@@ -27,6 +27,8 @@ nosetests.xml
 
 # Translations
 *.mo
+messages.pot
+babel.cfg
 
 # Database file
 app.db
