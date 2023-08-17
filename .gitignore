@@ -29,6 +29,7 @@ nosetests.xml
 *.mo
 messages.pot
 babel.cfg
+app
 
 # Database file
 app.db
